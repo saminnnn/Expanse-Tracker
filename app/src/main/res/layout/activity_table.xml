@@ -1,0 +1,49 @@
+<android.support.v4.widget.DrawerLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/table" />
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Home"
+            android:textSize="30sp"
+            android:background="#FFFAFA"
+            android:onClick="home"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Catagories"
+            android:textSize="30sp"
+            android:onClick="nothing"
+            android:background="#4226ff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Reset"
+            android:textSize="30sp"
+            android:onClick="reset"
+            android:background="#FFFAFA"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:id="@+id/testing"/>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

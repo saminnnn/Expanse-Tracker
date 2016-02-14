@@ -1,0 +1,105 @@
+<android.support.v4.widget.DrawerLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center_horizontal"
+           android:textSize="35sp"
+           android:paddingTop="20dp"
+           android:id="@+id/home_display"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Enter Spending"
+               android:paddingLeft="10dp"
+               android:textSize="20sp"
+               android:layout_weight="5"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="4"
+               android:id="@+id/spendings"
+               android:inputType="numberDecimal"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="4"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="Catagory:"
+                   android:paddingLeft="10dp"
+                   android:textSize="20sp"
+                   android:gravity="center_vertical"/>
+
+              <Spinner
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:spinnerMode="dropdown"
+                  android:id="@+id/catagory_list"/>
+
+           </LinearLayout>
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="4"
+               android:onClick="submit"
+               android:text="Submit"
+               android:textSize="20sp"/>
+       </LinearLayout>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Home"
+            android:background="#4226ff"
+            android:textSize="30sp"
+            android:onClick="nothing"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Catagories"
+            android:textSize="30sp"
+            android:onClick="tables"
+            android:background="#FFFAFA"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Reset"
+            android:textSize="30sp"
+            android:onClick="reset"
+            android:background="#FFFAFA"/>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
